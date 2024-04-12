@@ -42,4 +42,5 @@ Route::get('/', function () {
 Route::get('/users', [UserController::class, 'index'])->name('login');
 Route::get('/user/{id}', [UserController::class, 'show']);
 Route::get('/students', [StudentController::class, 'index']);
+Route::get('/students/{id}', [StudentController::class, 'show']);
 
