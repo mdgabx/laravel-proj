@@ -3,5 +3,8 @@
     <head>
         <title>Laravel tutorial</title>
     </head>
-    <body>Body</body>
+    <body>
+        <p>{{ $name }}</p>
+        <p>{{ $age }}</p>
+    </body>
 </html>

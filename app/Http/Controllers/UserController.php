@@ -22,6 +22,7 @@ class UserController extends Controller
         // return view('user', ['data' => $data]);
 
         return view('user')
-                ->with('name', 'Mark');
+                ->with('name', 'Mark')
+                ->with('age', 22);
     }
 }
