@@ -22,6 +22,7 @@ class StudentsFactory extends Factory
             'email' => fake()->safeEmail(),
             'gender' => fake()->numberBetween($min = 18, $max = 22),
             'age' => fake()->randomElement(['Male', 'Female']),
+            
         ];
     }
 }
