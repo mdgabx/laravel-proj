@@ -20,9 +20,8 @@ class StudentsFactory extends Factory
             'first_name' => fake()->name(),
             'last_name' => fake()->lastName(),
             'email' => fake()->safeEmail(),
-            'gender' => fake()->numberBetween($min = 18, $max = 22),
-            'age' => fake()->randomElement(['Male', 'Female']),
-            
+            'age' => fake()->numberBetween($min = 18, $max = 22),
+            'gender' => fake()->randomElement(['Male', 'Female']),
         ];
     }
 }
