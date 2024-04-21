@@ -11,7 +11,7 @@ class StudentController extends Controller
 {
     public function index () 
     {
-        $data = Students::all();
+        // $data = Students::all();
         // $data = Students::where('id', 1)->get();
         // $data = Students::where('first_name', 'like', '%bert%')->get();
         // $data = Students::where('age', '>=', 19)->orderBy('first_name', 'asc')->limit(5)->get();
@@ -22,7 +22,7 @@ class StudentController extends Controller
 
         // $data = Students::where('id', 101)->firstOrFail();
 
-        return view('students.index', ['students' => $data]);
+        return view('students.index');
     }
 
     public function show($id) {
