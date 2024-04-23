@@ -69,6 +69,7 @@ use Illuminate\Http\Request;
 Route::get('/', [StudentController::class, 'index']);
 Route::get('/login', [UserController::class, 'login']);
 Route::get('/register', [UserController::class, 'register']);
+Route::post('/store', [UserController::class, 'store']);
 
 
 
